@@ -41,16 +41,15 @@ public class DemoQaTests {
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldBe(visible);
-        $(".table-responsive").shouldHave(
-                Condition.text("Student Name Test Test"),
-                Condition.text("Student Email test@test.com"),
-                Condition.text("Gender Male"),
-                Condition.text("Mobile 1111111111"),
-                Condition.text("Date of Birth 02 January,2000"),
-                Condition.text("Subjects Computer Science"),
-                Condition.text("Hobbies Reading"),
-                Condition.text("Picture test.jpg"),
-                Condition.text("Address Some street 1"),
-                Condition.text("State and City NCR Delhi"));
+        $(".table-responsive").shouldHave(Condition.text("Student Name Test Test"));
+        $(".table-responsive").shouldHave(Condition.text("Student Email test@test.com"));
+        $(".table-responsive").shouldHave(Condition.text("Gender Male"));
+        $(".table-responsive").shouldHave(Condition.text("Mobile 1111111111"));
+        $(".table-responsive").shouldHave(Condition.text("Date of Birth 02 January,2000"));
+        $(".table-responsive").shouldHave(Condition.text("Subjects Computer Science"));
+        $(".table-responsive").shouldHave(Condition.text("Hobbies Reading"));
+        $(".table-responsive").shouldHave(Condition.text("Picture test.jpg"));
+        $(".table-responsive").shouldHave(Condition.text("Address Some street 1"));
+        $(".table-responsive").shouldHave(Condition.text("State and City NCR Delhi"));
     }
 }
